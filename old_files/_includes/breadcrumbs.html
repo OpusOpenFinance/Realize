@@ -1,0 +1,18 @@
+{% if page.parent %}
+  <nav aria-label="Breadcrumb">
+    <ol class="breadcrumb-nav">
+      {% assign ancestors = page.url | split: '/' | reject: '' %}
+      {% assign path = '' %}
+      {% for ancestor in ancestors %}
+        {% assign path = path | append: '/' | append: ancestor %}
+        {% assign ancestor_page = site.pages | where: 'url', path | first %}
+        {% if ancestor_page %}
+          <li class="breadcrumb-nav-item">
+            <a href="{{ ancestor_page.url | relative_url }}">{{ ancestor_page.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      <li class="breadcrumb-nav-item active" aria-current="page">{{ page.title }}</li>
+    </ol>
+  </nav>
+{% endif %}

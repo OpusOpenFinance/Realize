@@ -1,0 +1,10 @@
+<nav class="nav-list">
+  {% assign pages_list = site.pages | sort: 'nav_order' %}
+  {% for node in pages_list %}
+    {% if node.title and node.nav_exclude != true %}
+      <li class="nav-list-item">
+        <a href="{{ node.url | relative_url }}">{{ node.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</nav>

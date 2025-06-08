@@ -7,12 +7,6 @@ Troca de nome de arquivo: de "oas-treasure-titles.yml" para "oas-treasury-bonds"
 
 1) Fazer a documentação da construção do aplicativo e Web.
 2) A API opus-commons deve ser listada na seção sobre a construção de conectores.
-3) Criar páginas para JSONs em Integração/Conectores-Pagto.md (olhar esquema em apis-dados-abertos/Accounts.md)
-
-Dúvidas:
-
-1) O que é essa "API dos endpoints de pagamentos internos, responsável pelos endpoints não regulatórios." ????
-   Arquivo oas-oof-payment.yml
 
 Site multi-idioma
 ==== ============
@@ -34,11 +28,6 @@ Site multi-idioma
 
   - Como resolver em definitivo?
       Usar o Jekyll para gerar as páginas estáticas utilizando o método acima e colocar em um servidor na Web.
-
-  - Como usar o GitHub Pages?
-      1) Gerar dois repositórios separados, um por idioma, dane-se! (ou)
-      2) Aprender a manipular os arquivos gerados pelo Jekyll no GitHub Pages.
-
 
 Documentação UI
 ------------ --

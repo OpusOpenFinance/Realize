@@ -1,0 +1,16 @@
+# Restrição de conteúdo a ser incluído
+include:
+  - index.html
+
+# Exclusão explícita das pastas de conteúdo multilíngue
+exclude:
+  - pt-br
+  - en
+
+# A base continua sendo /Documentation
+baseurl: "/Documentation"
+
+# Nenhuma funcionalidade adicional necessária
+just_the_docs:
+  search_enabled: false
+  show_toc: false

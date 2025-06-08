@@ -1,0 +1,12 @@
+include:
+  - pt-br
+
+exclude:
+  - en
+  - index.html
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

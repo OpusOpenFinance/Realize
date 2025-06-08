@@ -14,10 +14,20 @@ _site/
 .bundle/
 vendor/
 
+# Ignora arquivos do Ruby
+*.gem
+*.rbc
+.ruby-version
+.ruby-gemset
+
 # Ignora os arquivos fonte do thema "Just the docs"
 LICENSE
 just-the-docs-template-main
 just-the-docs-template-main.zip
+
+# ignora OS junk
+.DS_Store
+Thumbs.db
 
 # Ignora arquivos de trabalho auxiliares
 erros.txt

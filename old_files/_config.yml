@@ -1,0 +1,90 @@
+title: "Opus Open Finance"
+description: "Documentação que descreve a Plataforma Opus Open Finance, incluindo integração e implantação"
+
+url: "https://opusopenfinance.github.io"
+baseurl: "/Documentation"
+
+langs:
+  - pt-br
+  - en
+lang_names:
+  pt-br: Português
+  en: English
+
+markdown: kramdown  # Garante kramdown como processador de markdown
+highlighter: rouge  # Garante rouge para syntax highlighting
+
+remote_theme: null  # Deve estar assim para usar o template local
+
+theme: "just-the-docs"
+
+just_the_docs:
+  layout: default
+
+  enable_cache: false
+
+  navigation_structure: true
+
+  show_toc: true    # Exibe a barra lateral de navegação em todas as páginas
+  toc_levels: 1..3  # Define os niveis de cabeçalho a serem exibidos (H1 a H3, ou #, ## e ###)
+
+  sidebar:
+    position: fixed # Mantém a barra lateral fixa
+
+  search_enabled: true # Gera a caixa de pesquisa no alto das páginas do site.
+
+  custom_js:
+    - /assets/js/open-links.js
+    - /assets/js/language-redirect.js
+
+  custom_css: assets/css/custom.css
+
+  include_head: head_custom.html
+
+  header_custom: true
+
+# remote_theme: "just-the-docs/just-the-docs"
+
+include:            # Força o uso do layout default local em vez do remoto.
+  - _layouts
+
+footer_content: null
+
+aux_links: null
+  #
+  #Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
+# Observe que há callouts para Português e Inglês (por ex, "nota" e "note", "aviso" e "warning").
+# O que muda é o título (campo title) que aparecerá no texto.
+
+callouts_level: quiet # or loud
+callouts:
+  destaque:
+    color: yellow
+  importante:
+    title: Importante
+    color: blue
+  novo:
+    title: Novo
+    color: green
+  nota:
+    title: Nota
+    color: purple
+  aviso:
+    title: Aviso
+    color: red
+  # Inglês 
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
