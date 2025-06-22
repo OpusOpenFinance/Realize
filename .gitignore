@@ -1,2 +1,32 @@
 *.swp
 Compara
+# Jekyll build artifacts
+_site/
+tmp-build/
+.jekyll-cache/
+.jekyll-metadata
+
+# Search data é gerado automaticamente, não precisa ser versionado
+assets/js/search-data.json
+
+# Arquivos de build temporário por idioma (caso use nomes diferentes no futuro)
+Documentation/pt-br/
+Documentation/en/
+Documentation/es/
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# VS Code config (opcional)
+.vscode/
+
+# Bundler e Ruby
+vendor/bundle/
+.bundle/
+Gemfile.lock
+
+# Caso você use Rake com outras tarefas locais
+*.log

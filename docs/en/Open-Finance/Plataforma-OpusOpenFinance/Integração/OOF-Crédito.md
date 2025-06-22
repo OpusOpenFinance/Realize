@@ -5,7 +5,7 @@ parent: "Data Sharing"
 nav_order: 4
 has_children: true
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/OOF-Crédito/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/OOF-Crédito/"
 ---
 
 # Credit Operations

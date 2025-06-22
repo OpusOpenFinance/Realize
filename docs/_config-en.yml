@@ -1,0 +1,16 @@
+# Incluir apenas o conteúdo em en
+include:
+  - en
+
+# Excluir os demais idiomas e o redirecioamento
+exclude:
+  - pt-br
+  - index.html
+
+# Permalinks simples
+defaults:
+  - scope:
+      path: "en"
+      type: "pages"
+    values:
+      layout: default

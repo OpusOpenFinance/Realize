@@ -4,7 +4,7 @@ title: "Account Holder"
 parent: "Participation Profiles"
 nav_order: 3
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Open-Finance-Brasil/PerfisOFB/OFB-Detentor/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Open-Finance-Brasil/PerfisOFB/OFB-Detentor/"
 ---
 
 # Account Holder

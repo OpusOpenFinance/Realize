@@ -1,0 +1,8 @@
+{% case page.lang %}
+  {% when "pt-br" %}
+    Buscar em {{site.title}}
+  {% when "en" %}
+    Search {{site.title}}
+  {% else %}
+    Search {{site.title}}
+{% endcase %}

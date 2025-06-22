@@ -5,7 +5,7 @@ parent: "Opus Open Finance"
 nav_order: 4
 has_children: true
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/OOF-Integração/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/OOF-Integração/"
 ---
 
 # Integração da Plataforma na instituição financeira

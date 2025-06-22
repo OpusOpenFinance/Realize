@@ -4,7 +4,7 @@ title: "Credit Cards API"
 parent: "Data Sharing"
 nav_order: 2
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Cartão-de-Credito/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Cartão-de-Credito/"
 ---
 
 # Credit Cards API

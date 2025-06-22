@@ -4,7 +4,7 @@ title: "Example Pension"
 parent: "Open Data"
 nav_order: 12
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Pension/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Pension/"
 ---
 
 # JSON File Example

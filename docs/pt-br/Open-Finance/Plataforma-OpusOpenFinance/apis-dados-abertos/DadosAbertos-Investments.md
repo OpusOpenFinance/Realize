@@ -4,7 +4,7 @@ title: "Exemplo Investimentos"
 parent: "Dados Abertos"
 nav_order: 8
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Investments/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Investments/"
 ---
 
 # Exemplo de arquivo JSON

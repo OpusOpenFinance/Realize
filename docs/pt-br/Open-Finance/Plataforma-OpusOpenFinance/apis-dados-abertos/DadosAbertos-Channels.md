@@ -4,7 +4,7 @@ title: "Exemplo Canais de Atendimento"
 parent: "Dados Abertos"
 nav_order: 1
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Channels/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Channels/"
 ---
 
 # Exemplo de arquivo JSON

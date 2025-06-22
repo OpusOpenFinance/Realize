@@ -4,7 +4,7 @@ title: "Internet Banking"
 parent: "App e Web"
 nav_order: 2
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/Jornada-de-Ux/consentimento/web2as/OOF-Internet-Banking/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/Jornada-de-Ux/consentimento/web2as/OOF-Internet-Banking/"
 ---
 
 # Internet Banking

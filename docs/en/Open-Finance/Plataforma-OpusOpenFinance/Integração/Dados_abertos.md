@@ -4,7 +4,7 @@ title: "Open Data"
 parent: "Platform Integration"
 nav_order: 1
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/Dados_abertos/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/Dados_abertos/"
 ---
 
 # Open Data

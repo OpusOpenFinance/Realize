@@ -4,7 +4,7 @@ title: "Example Unarranged Account Overdraft"
 parent: "Open Data"
 nav_order: 5
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Unarranged/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Unarranged/"
 ---
 
 # JSON File Example

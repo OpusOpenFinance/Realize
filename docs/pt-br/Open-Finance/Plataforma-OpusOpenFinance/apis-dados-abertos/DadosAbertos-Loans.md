@@ -4,7 +4,7 @@ title: "Exemplo Empréstimos"
 parent: "Dados Abertos"
 nav_order: 3
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Loans/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Loans/"
 ---
 
 # Exemplo de arquivo JSON

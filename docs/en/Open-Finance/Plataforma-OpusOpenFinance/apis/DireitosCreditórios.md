@@ -4,7 +4,7 @@ title: "Invoice Financing API"
 parent: "Credit Operations"
 nav_order: 4
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/DireitosCreditórios/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/DireitosCreditórios/"
 ---
 
 # Invoice Financing

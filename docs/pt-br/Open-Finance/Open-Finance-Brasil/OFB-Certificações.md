@@ -4,7 +4,7 @@ title: "Certificações e Certificados"
 parent: "Open Finance Brasil"
 nav_order: 4
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Open-Finance-Brasil/OFB-Certificações/"
+alternate_lang: "/Documentation/en/Open-Finance/Open-Finance-Brasil/OFB-Certificações/"
 ---
 
 # Certificações e Certificados

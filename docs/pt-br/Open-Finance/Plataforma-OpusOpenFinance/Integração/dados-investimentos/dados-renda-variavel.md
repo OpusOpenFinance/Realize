@@ -4,7 +4,7 @@ title: "API de Renda Variável"
 parent: "Investimentos"
 nav_order: 3
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/dados-investimentos/dados-renda-variavel/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/dados-investimentos/dados-renda-variavel/"
 ---
 
 # API de Renda Variável

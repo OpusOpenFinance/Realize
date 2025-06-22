@@ -4,7 +4,7 @@ title: "Bank Fixed Income API"
 parent: "Investments"
 nav_order: 1
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/dados-investimentos/dados-renda-fixa-bancaria/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/dados-investimentos/dados-renda-fixa-bancaria/"
 ---
 
 # Bank Fixed Income API

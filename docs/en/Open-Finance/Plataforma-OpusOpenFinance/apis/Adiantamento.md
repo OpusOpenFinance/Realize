@@ -4,7 +4,7 @@ title: "Unarranged Accounts Overdraft API"
 parent: "Credit Operations"
 nav_order: 3
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Adiantamento"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Adiantamento"
 ---
 
 # Unarranged Accounts Overdraft API

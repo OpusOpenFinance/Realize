@@ -5,10 +5,10 @@ parent: "Platform Integration"
 nav_order: 4
 has_children: true
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/Jornada-de-Ux/App-e-Web/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/App-e-Web/"
 ---
 
-## Introduction
+# Digital service channels integration
 
 When a consent creation request from another financial institution is received by the platform—whether for data sharing consent or for making a payment—the platform indirectly triggers the end customer’s mobile app or Internet Banking Web, and these artifacts must be prepared to handle this trigger.
 
@@ -19,13 +19,13 @@ To ensure that the digital service channels are prepared, it is necessary to:
 
 ## Digital Service Channels
 
-The following digital service channels are provided by *Open Finance Brasil*:
+The following digital service channels are provided for by *Open Finance Brasil*:
 
 - Mobile App
 - Internet Banking
 - *Handoff* Screen
 
-> When the financial institution does not offer a Web channel for its customer (and the consent creation request came via the Web), a *Handoff* screen must be displayed. The **Opus Open Finance Platform** includes a standard *Handoff* screen that can be used by the financial institution, if applicable.
+> When the financial institution does not offer a web channel for its customer (and the consent creation request was initiated via the web), a *Handoff* screen must be displayed. This screen should contain a *QR Code* that will be scanned by the customer using a *smartphone* to redirect the consent creation request to the financial institution's mobile application. The **Opus Open Finance Platform** includes a standard *Handoff* screen that can be used by the financial institution, if applicable.
 
 ## UX Requirements
 

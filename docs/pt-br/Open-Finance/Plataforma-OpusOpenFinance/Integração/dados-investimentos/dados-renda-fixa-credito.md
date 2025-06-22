@@ -4,7 +4,7 @@ title: "API de Renda Fixa de Crédito"
 parent: "Investimentos"
 nav_order: 2
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/dados-investimentos/dados-renda-fixa-credito/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/dados-investimentos/dados-renda-fixa-credito/"
 ---
 
 # API de Renda Fixa de Crédito

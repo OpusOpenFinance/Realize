@@ -4,7 +4,7 @@ title: Requisitos Não Funcionais
 parent: "Open Finance Brasil"
 nav_order: 6
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Open-Finance-Brasil/OFB-RequisitosNF/"
+alternate_lang: "/Documentation/en/Open-Finance/Open-Finance-Brasil/OFB-RequisitosNF/"
 ---
 
 # Requisitos Não Funcionais

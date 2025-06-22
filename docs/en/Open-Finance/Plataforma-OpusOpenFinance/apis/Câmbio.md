@@ -4,7 +4,7 @@ title: "Foreign Exchange API"
 parent: "Data Sharing"
 nav_order: 6
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Câmbio/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Câmbio/"
 ---
 
 # Foreign Exchange API

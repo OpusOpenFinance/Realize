@@ -4,7 +4,7 @@ title: "Financing API"
 parent: "Credit Operations"
 nav_order: 2
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Financiamento/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Financiamento/"
 ---
 
 # Financing

@@ -4,7 +4,7 @@ title: "Open data"
 parent: "Participation Profiles"
 nav_order: 1
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Open-Finance-Brasil/PerfisOFB/Dados-abertos/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Open-Finance-Brasil/PerfisOFB/Dados-abertos/"
 ---
 
 # Open Data

@@ -4,7 +4,7 @@ title: "Receptor de Dados"
 parent: "Perfis de participação"
 nav_order: 4
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Open-Finance-Brasil/PerfisOFB/OFB-Receptor/"
+alternate_lang: "/Documentation/en/Open-Finance/Open-Finance-Brasil/PerfisOFB/OFB-Receptor/"
 ---
 
 # Receptor de Dados

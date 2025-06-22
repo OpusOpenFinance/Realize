@@ -4,7 +4,7 @@ title: "Investment Funds API"
 parent: "Investments"
 nav_order: 4
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/dados-investimentos/dados-fundos/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/dados-investimentos/dados-fundos/"
 ---
 
 # Investment Funds API
