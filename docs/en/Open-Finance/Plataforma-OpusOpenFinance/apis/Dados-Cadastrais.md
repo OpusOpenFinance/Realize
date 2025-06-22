@@ -4,7 +4,7 @@ title: "Customers"
 parent: "Data Sharing"
 nav_order: 1
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Dados-Cadastrais/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Dados-Cadastrais/"
 ---
 
 # Personal Data API

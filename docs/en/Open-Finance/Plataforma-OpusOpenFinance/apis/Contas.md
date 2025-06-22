@@ -4,7 +4,7 @@ title: "Accounts API"
 parent: "Data Sharing"
 nav_order: 3
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Contas/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/apis/Contas/"
 ---
 
 # Accounts API

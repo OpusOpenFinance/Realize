@@ -5,7 +5,7 @@ parent: "Plataforma Opus Open Finance"
 nav_order: 1
 has_children: true
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Open-Finance-Brasil/OpenFinanceBrasil/"
+alternate_lang: "/Documentation/en/Open-Finance/Open-Finance-Brasil/OpenFinanceBrasil/"
 ---
 
 # Open Finance Brasil

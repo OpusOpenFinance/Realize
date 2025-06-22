@@ -4,7 +4,7 @@ title: "The Ecosystem"
 parent: "Open Finance Brazil"
 nav_order: 1
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Open-Finance-Brasil/Ecossistema/OFB-Ecossistema/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Open-Finance-Brasil/Ecossistema/OFB-Ecossistema/"
 ---
 
 # The Ecosystem

@@ -4,7 +4,7 @@ title: "Platform Deployment"
 parent: "Platform Implementation"
 nav_order: 6
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Implantação/OOF-Deploy/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Implantação/OOF-Deploy/"
 ---
 
 # Opus Open Finance Platform Infrastructure

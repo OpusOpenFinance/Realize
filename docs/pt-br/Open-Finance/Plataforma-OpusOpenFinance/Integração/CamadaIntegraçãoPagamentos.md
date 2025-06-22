@@ -5,7 +5,7 @@ parent: "Integração da Plataforma"
 nav_order: 3
 has_children: true
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/CamadaIntegraçãoPagamentos/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/CamadaIntegraçãoPagamentos/"
 ---
 
 # Integração com Pagamentos
@@ -21,7 +21,7 @@ Embora a regulação do _Open Finance Brasil_ preveja diversos meios de pagament
 {:.importante}
 A _criação de consentimento de pagamento_ normalmente envolve a interação com dois tipos de sistemas da instituição financeira: sistemas de retaguarda, como conta corrente e o módulo de pagamentos _Pix_, e sistemas de canais digitais de atendimento, como _mobile banking_ e _internet banking_. A _camada de integração de pagamentos_ lida exclusivamente com os sistemas de retaguarda. Os aspectos referentes à integração com canais digitais de atendimento, tipicamente para obter a autorização do cliente através de autenticação, está descrita na seção de integração [_App e Web_][App-e-Web] desta documentação.
 
-# Camada de Integração de Pagamentos
+## Camada de Integração de Pagamentos
 
 A imagem abaixo esquematiza a interação da **Plataforma Opus Open Finance** com a _camada de integração de pagamentos_ através da _API REST_.
 
@@ -29,7 +29,7 @@ A imagem abaixo esquematiza a interação da **Plataforma Opus Open Finance** co
 
 ---
 
-# Camada de integração de Pagamento
+## Camada de integração de Pagamento
 
 A _camada de integração de pagamento_ deve implementar uma _API REST_ que disponibiliza cinco diferentes operações, duas que serão chamadas durante a etapa de _criação do consentimento de pagamento_ e três que serão chamadas durante a etapa de _liquidação do pagamento_:
 
@@ -44,29 +44,29 @@ _Etapa de liquidação do pagamento:_
 2. _Retornar o status de um pagamento_: Operação para retornar o status de pagamento, de acordo com a [máquina de estados](https://openfinancebrasil.atlassian.net/wiki/spaces/OF/pages/347078805/M+quina+de+Estados+-+v4.0.0+-+SV+Pagamentos) do _Open Finance Brasil_.
 3. _Cancelar um pagamento_: Para o caso de pagamentos agendados, essa é a operação que permite cancelar o agendamento via Open Finance.
 
-# API de integração
+## API de integração
 
 A descrição da API que deve ser implementada pela _camada de integração de pagamento_, que é a API _Payment Initiation_, pode ser encontrada [**aqui**.][API-pagamento].
 
-Para fazer o download do arquivo YAML/OAS que contém a especificação da API clique [**aqui**](payment-integration-0-1-0.yml){:download="../apis/payment-integration-0-1-0.yml"}.
+Para fazer o download do arquivo YAML/OAS que contém a especificação da API clique [**aqui**](../apis/payment-integration-0-1-0.yml){:download="../apis/payment-integration-0-1-0.yml"}.
 
-# Cenários de Pagamentos a Serem Cobertos pela Integração
+## Cenários de Pagamentos a Serem Cobertos pela Integração
 
 Na implementação da integração de pagamentos, é necessário cobrir a criação e a consulta de pagamentos em cada um dos cenários descritos a seguir.
 
 Para pagamentos retidos para análise (status "PDNG" do _Open Finance Brasil_) ou agendados, também é necessário contemplar a possibilidade de revogação do pagamento.
 
-## Cenários por Tipo de Cliente Pagador
+### Cenários por Tipo de Cliente Pagador
 
 - **Pessoa Física (PF)**
 - **Pessoa Jurídica (PJ)** _(quando suportado pela retaguarda da instituição financeira)_
 
-## Cenários por Data de Efetivação do Pagamento
+### Cenários por Data de Efetivação do Pagamento
 
 - **Instantâneo**: Pagamentos a serem efetivados no mesmo dia da solicitação.
 - **Agendado**: Pagamentos a serem efetivados em data futura.
 
-## Cenários por Forma de Iniciação do Pagamento
+### Cenários por Forma de Iniciação do Pagamento
 
 - **MANU**: Iniciado por inserção manual dos dados bancários.
 - **INIC**: Iniciado pelo recebedor (_creditor_).
@@ -74,7 +74,7 @@ Para pagamentos retidos para análise (status "PDNG" do _Open Finance Brasil_) o
 - **QRES**: Iniciado por QR Code Estático.
 - **QRDN**: Iniciado por QR Code Dinâmico.
 
-## Cenários por Tipo de Tentativa de Pagamento
+### Cenários por Tipo de Tentativa de Pagamento
 
 O Arranjo _Pix_ possibilita retentativas para pagamentos específicos, como o _Pix Automático_.  
 Ao realizar um _Pix_ pelo Open Finance, a integração deve tratar adequadamente as seguintes tentativas de pagamento:
@@ -93,7 +93,7 @@ A seguir, é apresentada uma visão mais técnica das regras de identificação 
 
 A análise de campos abaixo é feita para o payload da requisição de criação de pagamentos.
 
-## Como Identificar o Tipo de Usuário Cliente Pagador
+### Como Identificar o Tipo de Usuário Cliente Pagador
 
 | Campo `consent.businessDocumentType.document.identification` | Interpretação |
 | :----------------------------------------------------------- | ------------- |
@@ -103,11 +103,11 @@ A análise de campos abaixo é feita para o payload da requisição de criação
 {:.nota}
 ℹ️ Independentemente do tipo de usuário, seu CPF estará disponível no campo `consent.loggedUser.document.identification`.
 
-## Como Identificar a Data de Efetivação do Pagamento
+### Como Identificar a Data de Efetivação do Pagamento
 
 O campo que define a data do pagamento varia conforme o tipo de pagamento (campo `paymentType`):
 
-### Caso `paymentType` seja `PAYMENT_CONSENT`
+#### Caso `paymentType` seja `PAYMENT_CONSENT`
 
 | Campo `consent.payment.schedule`          | Cenário     | Data de Pagamento                      |
 | :---------------------------------------- | :---------- | :------------------------------------- |
@@ -115,14 +115,14 @@ O campo que define a data do pagamento varia conforme o tipo de pagamento (campo
 | Possui subcampo `single`                  | Agendado    | `consent.payment.schedule.single.date` |
 | Possui subcampo **diferente** de `single` | Agendado    | `requestBody.data.date`                |
 
-### Caso `paymentType` seja `PAYMENT_RECURRING_CONSENT`
+#### Caso `paymentType` seja `PAYMENT_RECURRING_CONSENT`
 
 | Campo `requestBody.data.date` | Cenário     | Data de Pagamento       |
 | :---------------------------- | :---------- | :---------------------- |
 | É data **atual**              | Instantâneo | Data atual              |
 | É data **futura**             | Agendado    | `requestBody.data.date` |
 
-## Como Identificar a Forma de Iniciação e o Recebedor (creditor)
+### Como Identificar a Forma de Iniciação e o Recebedor (creditor)
 
 A **forma de iniciação** do pagamento é determinada pelo valor do campo `requestBody.data.localInstrument`.  
 A forma de identificação do **recebedor (creditor)** varia conforme o tipo de iniciação informado.
@@ -144,27 +144,27 @@ Exemplo: a chave _Pix_ deve se referir à mesma conta indicada no campo creditor
 {:.nota}
 ℹ️ Todos os campos mencionados na tabela acima estão localizados dentro de `requestBody.data`.
 
-## Como Identificar a Tentativa de Pagamento
+### Como Identificar a Tentativa de Pagamento
 
 | Campo `requestBody.data.originalRecurringPaymentId` | Interpretação         |
 | :-------------------------------------------------- | :-------------------  |
 | Ausente                                             | Tentativa Original    |
 | Preenchido com o ID do pagamento original           | Retentativa Extra-dia |
 
-# Validações Obrigatórias para Pagamentos
+## Validações Obrigatórias para Pagamentos
 
 As validações a seguir devem ser implementadas na rota específica para a validação de dados do pagamento.
 
 Para cada validação, o erro listado na resposta da integração deve apresentar no campo `code` o código correspondente, conforme indicado.
 
-## Validação do Valor Máximo do Pagamento
+### Validação do Valor Máximo do Pagamento
 
 **ℹ️ Observações:**
 
 - Validação realizada para pagamentos do tipo `PAYMENT_CONSENT` (valor do campo `requestBody.paymentType`).
 - Todos os demais campos abaixo estão localizados dentro de `requestBody.data.payment`.
 
-### Regra
+#### Regra
 
 O valor da transação (campo `amount`) deve estar abaixo:
 
@@ -174,21 +174,21 @@ O valor da transação (campo `amount`) deve estar abaixo:
 
 **Código de erro:** `VALOR_ACIMA_LIMITE`
 
-# Validações de QR Code
+## Validações de QR Code
 
 **ℹ️ Observações:**
 
 - Validações realizadas para pagamentos do tipo `PAYMENT_CONSENT` (valor do campo `requestBody.paymentType`).
 - Todos os demais campos abaixo estão localizados dentro de `requestBody.data.payment`.
 
-## Regras Gerais
+### Regras Gerais
 
 1. O tipo do QR Code deve ser coerente com a forma de iniciação do pagamento (campo `details.localInstrument`):
     - Se a forma de iniciação for **QRES**, o QR Code deve ser **Estático**.
     - Se a forma de iniciação for **QRDN**, o QR Code deve ser **Dinâmico**.
     - **Código de erro:** `QRCODE_INVALIDO`
 
-### Caso o QR Code seja **Estático**
+#### Caso o QR Code seja **Estático**
 
 1. O valor presente no QR Code Estático deve ser o mesmo informado no payload do pagamento (campo `amount`).
     - **Código de erro:** `VALOR_INVALIDO`
@@ -196,14 +196,14 @@ O valor da transação (campo `amount`) deve estar abaixo:
 2. A chave _Pix_ presente no QR Code Estático deve ser idêntica à chave _Pix_ informada no payload do pagamento (campo `details.proxy`).
     - **Código de erro:** `QRCODE_INVALIDO`
 
-## Caso o QR Code seja **Dinâmico**
+#### Caso o QR Code seja **Dinâmico**
 
 1. O status do QR Code Dinâmico deve ser válido para uso.
     - **Código de erro:** `QRCODE_INVALIDO`
 
-# Integração - Dúvidas Frequentes - FAQ
+## Integração - Dúvidas Frequentes - FAQ
 
-# Sobre Descoberta de Recursos
+### Sobre Descoberta de Recursos
 
 Dúvidas referentes ao [discovery de recursos no Opus Open Finance](/pt-br/integração-plugin/consent/readme.md#Discovery-de-recursos-no-Opus-Open-Banking).
 
@@ -241,13 +241,13 @@ Caso o usuário não possua contas, o retorno deve ser sucesso (HTTP 200) com um
 
 Se o campo `debtorAccount` do consentimento estiver preenchido com uma conta válida para pagamentos, essa conta deve ser marcada como "selecionada por padrão" (`"defaultSelected": true`). Independentemente disso, todas as contas disponíveis para pagamento devem ser retornadas.
 
-# Sobre Validação dos Dados de Pagamento
+### Sobre Validação dos Dados de Pagamento
 
 **O que deve ser validado na rota específica para a validação de dados do pagamento?**
 
 Conferir as [validações obrigatórias para pagamentos](/pt-br/integração-plugin/recomendacoes/validacoes-pagamentos/readme.md).
 
-# Sobre Solicitações de Criação de Pagamentos
+### Sobre Solicitações de Criação de Pagamentos
 
 **Como identificar a conta escolhida pelo portador para realizar o débito?**
 
@@ -265,6 +265,6 @@ Não. A **Plataforma Opus Open Finance** realizará uma requisição separada pa
 Por exemplo, ao receber uma requisição de agendamento recorrente por 5 meses, um débito por mês, a plataforma solicitará para a retaguarda da instituição financeira 5 agendamento independentes.  
 A data de cada agendamento deve ser determinada conforme descrito em [como identificar a data do pagamento](/pt-br/integração-plugin/recomendacoes/cenarios-pagamentos/readme.md#Como-Identificar-a-Data-de-Efetivação-do-Pagamento).
 
-[App-e-Web]: ./Jornada-de-Ux/App-e-Web.html
+[App-e-Web]: ./App-e-Web.html
 [Imagem-Camada-Integração]: ./images/Integração-Pagamento.png
 [API-pagamento]: ../../../../swagger-ui/index.html?api=payment-integration

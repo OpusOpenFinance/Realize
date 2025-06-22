@@ -4,7 +4,7 @@ title: "Example Acquiring"
 parent: "Open Data"
 nav_order: 10
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Acquiring/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Acquiring/"
 ---
 
 # JSON File Example

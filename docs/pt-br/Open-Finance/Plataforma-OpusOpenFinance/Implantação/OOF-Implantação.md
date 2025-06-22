@@ -5,7 +5,7 @@ parent: "Opus Open Finance"
 nav_order: 3
 has_children: true
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Implantação/OOF-Implantação/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Implantação/OOF-Implantação/"
 ---
 
 # Implantação da Plataforma

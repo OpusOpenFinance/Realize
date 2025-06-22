@@ -5,7 +5,7 @@ parent: "Opus Open Finance Brazil"
 nav_order: 4
 has_children: true
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/OOF-Integração/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/OOF-Integração/"
 ---
 
 # Platform Integration in the Financial Institution

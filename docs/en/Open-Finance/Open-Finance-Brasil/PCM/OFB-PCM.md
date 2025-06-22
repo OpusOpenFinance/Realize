@@ -4,7 +4,7 @@ title: "Metrics Collection Platform (MCP)"
 parent: "Open Finance Brazil"
 nav_order: 5
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Open-Finance-Brasil/PCM/OFB-PCM/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Open-Finance-Brasil/PCM/OFB-PCM/"
 ---
 
 # Metrics Collection Platform

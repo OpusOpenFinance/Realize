@@ -4,7 +4,7 @@ title: "Example Service Channels"
 parent: "Open Data"
 nav_order: 1
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Channels/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Channels/"
 ---
 
 # JSON File Example

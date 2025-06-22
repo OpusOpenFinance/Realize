@@ -4,7 +4,7 @@ title: Platform Architecture
 parent: "Opus Open Finance Brazil"
 nav_order: 1
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Arquitetura/OOF-Arquitetura/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Arquitetura/OOF-Arquitetura/"
 ---
 
 # Architecture Overview

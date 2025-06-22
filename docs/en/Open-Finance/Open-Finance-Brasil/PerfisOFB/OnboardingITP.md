@@ -4,7 +4,7 @@ title: "PISP Onboarding"
 parent: "Payment Initiation Service Provider"
 nav_order: 1
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Open-Finance-Brasil/PerfisOFB/OnboardingITP/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Open-Finance-Brasil/PerfisOFB/OnboardingITP/"
 ---
 
 # PISP Onboarding Process

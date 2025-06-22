@@ -4,7 +4,7 @@ title: "Data Transmitter"
 parent: "Participation Profiles"
 nav_order: 2
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Open-Finance-Brasil/PerfisOFB/OFB-Transmissor/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Open-Finance-Brasil/PerfisOFB/OFB-Transmissor/"
 ---
 
 # Data Transmitter Profile

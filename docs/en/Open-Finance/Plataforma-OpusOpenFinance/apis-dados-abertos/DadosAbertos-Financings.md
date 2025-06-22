@@ -4,7 +4,7 @@ title: "Example Financings"
 parent: "Open Data"
 nav_order: 4
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Financings/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Financings/"
 ---
 
 # JSON File Example

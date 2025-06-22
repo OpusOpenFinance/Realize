@@ -5,7 +5,7 @@ parent: "Participation Profiles"
 nav_order: 5
 has_children: true
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Open-Finance-Brasil/PerfisOFB/OFB-ITP/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Open-Finance-Brasil/PerfisOFB/OFB-ITP/"
 ---
 
 # Payment Initiation Service Provider

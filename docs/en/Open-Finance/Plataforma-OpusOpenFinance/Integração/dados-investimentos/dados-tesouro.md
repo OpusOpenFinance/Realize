@@ -4,7 +4,7 @@ title: "Treasury Bonds API"
 parent: "Investments"
 nav_order: 5
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/dados-investimentos/dados-tesouro/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/dados-investimentos/dados-tesouro/"
 ---
 
 # Treasury Bonds API

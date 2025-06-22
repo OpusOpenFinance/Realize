@@ -4,7 +4,7 @@ title: "Example Invoice Financings"
 parent: "Open Data"
 nav_order: 6
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Invoices/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Invoices/"
 ---
 
 # JSON File Example

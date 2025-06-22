@@ -5,7 +5,7 @@ parent: "Compartilhamento de Dados"
 nav_order: 5
 has_children: true
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/OOF-Investimento/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/OOF-Investimento/"
 ---
 
 # Investimentos

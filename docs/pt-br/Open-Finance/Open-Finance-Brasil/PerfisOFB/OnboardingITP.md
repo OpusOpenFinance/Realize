@@ -4,7 +4,7 @@ title: "Onboarding ITP"
 parent: "ITP"
 nav_order: 1
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Open-Finance-Brasil/PerfisOFB/OnboardingITP/"
+alternate_lang: "/Documentation/en/Open-Finance/Open-Finance-Brasil/PerfisOFB/OnboardingITP/"
 ---
 
 # Onboarding de um ITP

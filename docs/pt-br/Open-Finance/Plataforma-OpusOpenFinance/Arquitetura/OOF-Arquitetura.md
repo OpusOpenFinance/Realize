@@ -4,7 +4,7 @@ title: Arquitetura da Plataforma
 parent: "Opus Open Finance"
 nav_order: 1
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Arquitetura/OOF-Arquitetura/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Arquitetura/OOF-Arquitetura/"
 ---
 # Visão Geral da Arquitetura
 

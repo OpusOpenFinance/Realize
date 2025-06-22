@@ -44,7 +44,11 @@ layout: table_wrappers
   {% endif %}
 
   <!-- Insere o script para abertura de links externos em nova aba -->
-  <script src="{{ site.baseurl }}/assets/js/open-links.js"></script>
+  <script src="{{ '/assets/js/open-links.js' | relative_url }}" defer></script>
+  
+  <!-- Insere o script que corrige o problema de sobreposição da lista de resultados da caixa
+       de pesquisa pela página de conteúdo -->
+  <script src="{{ '/assets/js/fix-search.js' | relative_url }}" defer></script>
 
   <!-- Insere o script de deteção de idioma do navegador e adequado redirecionamento -->
   <!-- <script src="{{ site.baseurl }}/assets/js/language-redirect.js"></script> -->

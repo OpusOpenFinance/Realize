@@ -4,7 +4,7 @@ title: "Exemplo Direitos Creditórios Descontados"
 parent: "Dados Abertos"
 nav_order: 6
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Invoices/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Invoices/"
 ---
 
 # Exemplo de arquivo JSON

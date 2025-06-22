@@ -5,7 +5,7 @@ parent: "Perfis de participação"
 nav_order: 5
 has_children: true
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Open-Finance-Brasil/PerfisOFB/OFB-ITP/"
+alternate_lang: "/Documentation/en/Open-Finance/Open-Finance-Brasil/PerfisOFB/OFB-ITP/"
 ---
 
 # Iniciador de Transação de Pagamentos

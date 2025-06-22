@@ -1,0 +1,25 @@
+{%- comment -%}
+  Versão sobrescrita da sidebar que:
+  - Usa logo.html no lugar de title.html
+  - Remove rodapé com "This site uses Just the Docs"
+{%- endcomment -%}
+
+<div class="side-bar">
+  <div class="site-header" role="banner">
+    {% include components/nav/logo.html %}
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+        <use xlink:href="#svg-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  {% include_cached components/site_nav.html %}
+
+  {%- capture nav_footer_custom -%}
+    {%- include nav_footer_custom.html -%}
+  {%- endcapture -%}
+  {%- if nav_footer_custom != "" -%}
+    {{ nav_footer_custom }}
+  {%- endif -%}
+</div>

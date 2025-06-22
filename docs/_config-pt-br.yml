@@ -1,12 +1,16 @@
+# Incluir apenas o conteúdo em pt-br
 include:
   - pt-br
 
+# Excluir os demais idiomas e o redirecioamento
 exclude:
   - en
   - index.html
 
+# Permalinks simples
 defaults:
   - scope:
-      path: ""
+      path: "pt-br"
+      type: "pages"
     values:
       layout: default

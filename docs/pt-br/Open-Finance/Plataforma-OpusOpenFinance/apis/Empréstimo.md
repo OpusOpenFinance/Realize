@@ -4,7 +4,7 @@ title: "API de Empréstimos"
 parent: "Operações de Crédito"
 nav_order: 1
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/apis/Empréstimo/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/apis/Empréstimo/"
 ---
 
 # Empréstimos

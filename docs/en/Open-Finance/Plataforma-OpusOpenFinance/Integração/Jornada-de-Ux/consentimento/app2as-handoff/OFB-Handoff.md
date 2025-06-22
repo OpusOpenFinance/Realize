@@ -4,7 +4,7 @@ title: "Handoff"
 parent: "Mobile App and Web"
 nav_order: 3
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/Jornada-de-Ux/consentimento/app2as-handoff/OFB-Handoff/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/Jornada-de-Ux/consentimento/app2as-handoff/OFB-Handoff/"
 ---
 
 # *Hybrid-flow* with *Handoff*

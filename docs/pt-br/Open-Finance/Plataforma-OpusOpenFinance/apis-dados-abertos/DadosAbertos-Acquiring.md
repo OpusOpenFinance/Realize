@@ -4,7 +4,7 @@ title: "Exemplo Adquirência"
 parent: "Dados Abertos"
 nav_order: 10
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Acquiring/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Acquiring/"
 ---
 
 # Exemplo de arquivo JSON

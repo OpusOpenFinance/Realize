@@ -4,7 +4,7 @@ title: "API de Adiantamento a Depositantes"
 parent: "Operações de Crédito"
 nav_order: 3
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/apis/Adiantamento"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/apis/Adiantamento"
 ---
 
 # API de Adiantamento a Depositantes

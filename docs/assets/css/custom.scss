@@ -1,22 +1,47 @@
 ---
 ---
-
-body{
+/* ========================================================================== */
+/* BASE GERAL: Fonte e Cor */
+/* ========================================================================== */
+body {
   font-family: 'Inter', sans-serif !important;
   color: #1e1360 !important;
   -webkit-font-smoothing: antialiased !important;
+  background-color: white;
+  margin: 0;
+  z-index: 0 !important;
+  position: relative !important;
+}
+
+html {
+  background-color: white;
 }
 
 .main-content {
   font-family: 'Inter', sans-serif !important;
   font-size: 16px !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important; /* Ajustado para dar mais corpo à fonte */
   line-height: 1.5 !important;
   color: #1e1360 !important;
+  z-index: 0 !important;
+  position: relative !important;
 }
 
-// Aplicar fonte e cor aos cabeçalhos
+/* Corrige empilhamento para evitar sobreposição da busca */
+.main,
+.main-content,
+.main-header,
+.main-header > *,
+.custom-header,
+.lang-switcher,
+.search-input-wrap {
+  position: relative !important;
+  z-index: 0 !important;
+}
 
+/* ========================================================================== */
+/* TIPOGRAFIA: Cabeçalhos e Navegação */
+/* ========================================================================== */
 .main-content h1,
 .main-content h2,
 .main-content h3,
@@ -28,8 +53,6 @@ body{
   color: #1e1360 !important;
 }
 
-// Fonte do cabeçalho de navegação 
-
 .nav-list-title {
   font-family: 'Merriweather', serif !important;
   font-weight: 300 !important;
@@ -37,14 +60,12 @@ body{
   color: #1e1360 !important;
 }
 
-// Largura da barra lateral
-
-.nav-list-link{
+.nav-list-link {
   font-family: 'Inter', sans-serif;
-  font-size: 16px !important;     // Padrão é 14px.
+  font-size: 16px !important;
   font-weight: 400;
   color: #1e1360 !important;
-  transition: all 0.2s ease
+  transition: all 0.2s ease;
 }
 
 .nav-list-link:hover {
@@ -52,31 +73,316 @@ body{
   color: #1a73e8 !important;
 }
 
+/* ========================================================================== */
+/* BARRA LATERAL (Sidebar) */
+/* ========================================================================== */
 .side-bar {
-  width: 300px !important;                  // Padrão é 300px. Deve corresponder a .main->{margin-left} abaixo.
-  background-color: #f5f8fc !important    // Background azul acinzentado.
+  width: 300px !important;
+  background-color: white !important;
+  border-right: none !important;
+  box-shadow: none !important;
 }
 
+.side-bar .site-header {
+  min-height: 132px !important;
+  height: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem !important;
+  box-sizing: border-box;
+  background-color: white !important;
+  margin: 0;
+  line-height: 1 !important;
+  border-bottom: none !important;
+}
+
+/* ========================================================================== */
+/* LOGO */
+/* ========================================================================== */
 .site-title {
-  font-family: 'Merriweather', serif !important;
-  font-weight: 300 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-img {
+  max-height: 80px;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================================================================== */
+/* CABEÇALHO DO CONTEÚDO PRINCIPAL */
+/* ========================================================================== */
+.main-header {
+  height: 96px !important;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: white;
+  border-bottom: 1px solid #dde3ea !important;
+  box-sizing: border-box;
+  z-index: 0;
+  position: relative;
+  margin: 0;
+}
+
+.main-header > * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.breadcrumb-nav {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+/* ========================================================================== */
+/* CAIXA DE BUSCA E RESULTADOS */
+/* ========================================================================== */
+.search {
+  position: relative;
+  z-index: 10;
+}
+
+#search-results {
+  position: fixed !important;
+  top: 10px;
+  width: 80vw !important;
+  max-width: 960px !important;
+  left: calc(50% - 40vw) !important;
+  min-height: 400px !important;
+  max-height: 60vh !important;
+  overflow-y: auto !important;
+  background-color: white;
+  z-index: 9999 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
+.search-input-wrap {
+  height: 3rem !important;
+}
+
+.search-results-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.search-results-list-item {
+  background-color: white;
+  display: flex !important;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 16px !important;
+  border-bottom: 1px solid #eee;
+}
+
+.search-results-list-item:last-child {
+  border-bottom: none;
+}
+
+.search-result {
+  display: block;
+  width: 100% !important;
   color: #1e1360 !important;
-  font-size: 18px !important;
-  margin: 1rem 1.25rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  transition: background 0.2s ease;
 }
 
-.breadcrumb-nav {                 // Parâmetros para o trecho do cabeçalho que exibe a hierarquia da página
-  margin-top: 0.5rem !important;  // ou ajuste conforme necessidade
+.search-result-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-top: 4px;
+  color: #1a73e8;
 }
 
+.search-result-content {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.search-result:hover,
+.search-result.active {
+  background-color: #e1ecf9 !important;
+  color: #1a73e8 !important;
+}
+
+.search-result-title,
+.search-result-doc-title,
+.search-result-section {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #1e1360;
+  font-family: 'Merriweather', serif;
+}
+
+.search-result-previews {
+  font-size: 14px;
+  color: #333;
+  margin-top: 4px;
+}
+
+.search-result-highlight {
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.search-overlay {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 999 !important;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity ease 400ms, width 0s, height 0s;
+}
+
+body:not(.search-active) .search-overlay {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  transition: opacity ease 400ms, width 0s 400ms, height 0s 400ms;
+}
+
+/* Exibição controlada via classe */
+#search-results,
+.search-overlay {
+  display: none !important;
+}
+
+body.search-active #search-results,
+body.search-active .search-overlay {
+  display: block !important;
+}
+
+/* ========================================================================== */
+/* CONTEÚDO PRINCIPAL E MARGENS */
+/* ========================================================================== */
 .main {
-  margin-left: 300px !important;   // Deve corresponder à largura da barra lateral .sidebar->{width} definida acima
-  padding-top: 1.25rem !important; // Espaço entre a barra e o conteúdo.
+  margin-left: 300px !important;
+  padding-top: 1.25rem !important;
+  z-index: 0 !important;
+  position: relative !important;
 }
 
+.main-content-wrap {
+  border-left: 1px solid #dde3ea !important;
+}
+
+/* ========================================================================== */
+/* CABEÇALHO PERSONALIZADO (language switcher) */
+/* ========================================================================== */
+.custom-header {
+  background: transparent !important;
+  color: #203864 !important;
+  height: 72px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: none !important;
+  box-sizing: border-box;
+}
+
+.site-header-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 16px;
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+.lang-switcher a {
+  color: #1a73e8 !important;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.lang-switcher a:hover {
+  text-decoration: underline;
+}
+
+.search-align-placeholder {
+  flex-grow: 1;
+}
+
+/* ========================================================================== */
+/* RODAPÉ */
+/* ========================================================================== */
+footer.site-footer {
+  all: unset;
+  display: block !important;
+  width: 100% !important;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  color: #888;
+  text-align: left !important;
+  position: relative !important;
+  box-sizing: border-box;
+}
+
+.site-footer-content {
+  display: block !important;
+  width: 100%;
+  text-align: left !important;
+}
+
+.footer-text-nowrap {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* ========================================================================== */
+/* MEDIA QUERIES: Ajustes para telas maiores */
+/* ========================================================================== */
 @media(min-width: 50rem) {
   .main-content-wrap {
     max-width: 100% !important;
-    padding-right: 2rem;         // opcional: cotrola o espaçamento da direita
+    padding-right: 2rem;
+  }
+
+  #menu-button {
+    display: none !important;
   }
 }

@@ -4,7 +4,7 @@ title: "Example Credit Card"
 parent: "Open Data"
 nav_order: 7
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-CreditCard/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-CreditCard/"
 ---
 
 # JSON File Example

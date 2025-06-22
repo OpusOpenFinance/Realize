@@ -1,0 +1,7 @@
+# .editorconfig - forces the use of LF instead of CRLF in the text files of the project to maintain Linux compatibility.
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8

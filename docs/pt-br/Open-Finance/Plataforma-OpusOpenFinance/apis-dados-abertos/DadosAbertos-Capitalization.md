@@ -4,7 +4,7 @@ title: "Exemplo Títulos de Capitalização"
 parent: "Dados Abertos"
 nav_order: 11
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Capitalization/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Capitalization/"
 ---
 
 # Exemplo de arquivo JSON

@@ -4,7 +4,7 @@ title: "Payments"
 parent: "Platform Integration"
 nav_order: 3
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/CamadaIntegraçãoPagamentos/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/CamadaIntegraçãoPagamentos/"
 ---
 
 <!-- WIP... Precisa traduzir a página "CamadaIntegraçãoPagamentos" e colocar aqui. Por enquanto, está com o conteúdo de Conectores-pagto, que é antigo -->

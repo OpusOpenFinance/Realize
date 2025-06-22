@@ -1,46 +1,85 @@
+# Informações básicas do site
 title: "Opus Open Finance"
 description: "Documentação que descreve a Plataforma Opus Open Finance, incluindo integração e implantação"
-
 url: "https://opusopenfinance.github.io"
 baseurl: "/Documentation"
 
-markdown: kramdown
-highlighter: rouge
-
+# Utiliza tema local
 remote_theme: null
 theme: "just-the-docs"
 
+# Plugins (importante para gerar search-data.json)
+plugins:
+  - just-the-docs
+
+# Markdown engine e syntax highlighting
+markdown: kramdown
+highlighter: rouge
+
+# Links auxiliares: no nivel do site (e não do tema) e VAZIO.
+# Tanto para contedo quanto para a barra de navegação.
+
+aux_links: {}
+nav_external_links: {}
+
+  # Configurações de busca
+search_enabled: true
+search:
+  tokenizer_separator: "/[\\s\\-/]+/"
+
+# Just the docs config
 just_the_docs:
   layout: default
   enable_cache: false
+  
+  # Estrutura de navegação
   navigation_structure: true
   show_toc: true
   toc_levels: 1..3
+
+  # Configura sidebar para não rolar com o texto
   sidebar:
     position: fixed
-  search_enabled: true
+
+  # Rodapés 
+  footer_content: null
+
+  # Arquivos JS e CSS customizados
   custom_js:
+    - /assets/js/just-the-docs.js
     - /assets/js/open-links.js
     - /assets/js/language-redirect.js
-  custom_css: assets/css/custom.css
-  include_head: head_custom.html
-  header_custom: true
 
+  custom_css: assets/css/custom.css
+
+  include_head: head_custom.html
+  include_custom_header: true
+
+  include:
+    - favicon.ico
+
+# Incluir diretórios personalizados (layouts locais ou sobrescritos)
 include:
   - _layouts
+  - _includes
+  - assets/css/custom.css
+  - lib
 
-footer_content: null
-aux_links: null
-
+# Callouts multilíngues
 callouts_level: quiet
 callouts:
+  # Português
   aviso:         { title: Aviso, color: red }
   destaque:      { color: yellow }
   importante:    { title: Importante, color: blue }
   novo:          { title: Novo, color: green }
   nota:          { title: Nota, color: purple }
+  
+  # Inglês
   warning:       { title: Warning, color: red }
   highlight:     { color: yellow }
   important:     { title: Important, color: blue }
   new:           { title: New, color: green }
   note:          { title: Note, color: purple }
+
+  # Diretórios multilíngues não são incluídos aqui - são controlados nos _config-<idioma>.yml

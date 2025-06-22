@@ -4,7 +4,7 @@ title: "Example Exchange"
 parent: "Open Data"
 nav_order: 13
 lang: "en"
-alternate_lang: "/docs/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Exchange/"
+alternate_lang: "/Documentation/pt-br/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Exchange/"
 ---
 
 # JSON File Example

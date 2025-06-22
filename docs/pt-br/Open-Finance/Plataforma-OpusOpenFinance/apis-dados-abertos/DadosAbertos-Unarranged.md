@@ -4,7 +4,7 @@ title: "Exemplo Adiantamento a Depositantes"
 parent: "Dados Abertos"
 nav_order: 5
 lang: "pt-br"
-alternate_lang: "/docs/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Unarranged/"
+alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/apis-dados-abertos/DadosAbertos-Unarranged/"
 ---
 
 # Exemplo de arquivo JSON

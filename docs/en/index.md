@@ -4,7 +4,7 @@ title: "Opus Open Finance Platform"
 nav_order: 1    # Main page of the site.
 has_children: true
 lang: "en"
-alternate_lang: "/docs/pt-br/index/"
+alternate_lang: "/Documentation/pt-br/index/"
 ---
 
 # Opus Open Finance Platform Documentation
