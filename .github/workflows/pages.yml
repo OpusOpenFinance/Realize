@@ -1,70 +1,67 @@
-# Nome do workflow que aparece na aba "Actions"
+# Nome do workflow que aparecerá na aba Actions do GitHub
 name: Deploy Jekyll site to Pages
 
-# Define quando o workflow será executado:
+# Define os gatilhos para execução automática ou manual
 on:
   push:
-    branches: ["main"]  # Sempre que houver push para o branch main
-  workflow_dispatch:     # Também permite execução manual pelo GitHub
+    branches: ["main"]       # Executa sempre que houver push para o branch main
+  workflow_dispatch:         # Permite executar manualmente pelo GitHub
 
-# Permissões que o GitHub precisa para realizar o deploy via GitHub Pages
+# Permissões mínimas necessárias para o deploy via GitHub Pages
 permissions:
-  contents: read       # Pode ler os arquivos do repositório
-  pages: write         # Pode escrever na infraestrutura do GitHub Pages
-  id-token: write      # Necessário para autenticação do deploy
+  contents: read
+  pages: write
+  id-token: write
 
-# Garante que só um deploy ocorra por vez
+# Garante que só uma execução ocorra por vez (útil se vários pushes acontecerem)
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Usa uma máquina Linux padrão do GitHub
-
-    # Define que todos os comandos 'run:' serão executados dentro do diretório 'docs'
-    defaults:
-      run:
-        working-directory: docs
+    runs-on: ubuntu-latest  # Ambiente Linux padrão
 
     steps:
       # Passo 1: Clona o repositório
       - name: 📥 Checkout
         uses: actions/checkout@v4
 
-      # Passo 2: Prepara o ambiente Ruby com Bundler e cache
-      - name: 💎 Setup Ruby
+      # Passo 2: Instala Ruby e as dependências do Bundler a partir do diretório docs/
+      - name: 💎 Setup Ruby (com bundler no diretório correto)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3'         # Versão do Ruby usada pelo Jekyll
-          bundler-cache: true         # Faz cache das gems para acelerar builds futuros
+          ruby-version: '3.3'            # Versão do Ruby compatível com seu ambiente local
+          bundler-cache: true            # Cache das gems para builds futuros
+          working-directory: docs        # ⚠️ Importante: onde está o Gemfile
 
-      # Passo 3: Configura GitHub Pages (cria ambiente interno de deploy)
+      # Passo 3: Prepara o ambiente interno de GitHub Pages
       - name: ⚙️ Setup GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      # Passo 4: Executa o script personalizado que gera os sites pt-br, en e o index.html
-      - name: 🛠️ Build multilingual site with githubpages.sh
+      # Passo 4: Executa seu script de build multilíngue
+      - name: 🛠️ Build multilíngue com githubpages.sh
         run: |
-          chmod +x githubpages.sh    # Garante permissão de execução
-          ./githubpages.sh           # Executa o build completo
+          chmod +x docs/githubpages.sh   # Garante permissão de execução
+          ./docs/githubpages.sh          # Executa o script dentro de /docs
 
-      # Passo 5: Envia o conteúdo gerado em ../_site para o GitHub Pages
+      # Passo 5: Faz upload do site gerado para ser usado no deploy
       - name: 📤 Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ../_site             # Caminho onde o script monta o site final
+          path: _site                    # Diretório de saída definido no script
 
-  # Job separado para realizar o deploy após o build
+  # Job separado para publicar no GitHub Pages
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
-    needs: build  # Só executa após o job de build terminar
+    needs: build  # Aguarda a conclusão do job de build acima
+
     steps:
-      # Passo 6: Realiza o deploy do conteúdo publicado como artifact
-      - name: 🚀 Deploy to GitHub Pages
+      - name: 🚀 Deploy para GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
