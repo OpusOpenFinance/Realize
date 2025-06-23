@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# backup_md.sh
+#   Script para realizar backup de todos os arquivos markdown em um diretório à parte.
+#   Útil para evitar tragédias quando se pretende fazer alterações "em massa" por script.
+
 # Caminho de origem e destino
 SRC_DIR="docs"
 DEST_DIR="$HOME/bak"

@@ -89,6 +89,11 @@ document.addEventListener("DOMContentLoaded", function () {
     results.style.top = `${top}px`;
     results.style.left = `${left}px`;
     results.style.width = `${rect.width}px`;
+
+    console.log("Alinhando janela de busca:");
+    console.log("TOP:", top, "LEFT:", left, "WIDTH:", rect.width);
+    console.log(results.style.left,  results.style.width);
+
   }
 
   function observeSearchItems() {
