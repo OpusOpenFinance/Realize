@@ -32,14 +32,17 @@ Some of the key characteristics of the integration layer to be built are:
 
 - It does not need (and should not) address the validity of the requests, as the platform has already performed all necessary validations;
 - It must be able to handle multiple requests simultaneously (theoretically, there is no limit to the number of requests per second that must be handled);
-- It must offer response times compatible with the service level required by regulations. The maximum response times required by regulation for each type of request can be found [**here**][Tempos de Resposta];
+- It must offer response times compatible with the service level required by regulations. The maximum response times required by regulation for each type of request can be found [**in the official documentation of Open Finance Brazil**][Tempos de Resposta];
 
-> It should be considered that the Opus Open Finance Platform will reserve up to 40% of the response time for the validation and handling of each request.
+{: .important}
+It should be considered that the Opus Open Finance Platform will reserve up to 40% of the response time for the validation and handling of each request.
 
 We now present the different types of data involved in handling requests from the various financial products covered by the full scope of *Open Finance Brasil*, properly updated to its latest version. Each section below, in turn, references a specific documentation page that details this data and presents the *integration layer* API that must be built to integrate the **Opus Open Finance Platform** with the financial institution’s back-end systems.
 
-> In the *Open Finance Brasil* documentation, APIs related to **consent** (*consents*) and **resources** (*resources*) are defined. Regarding consent, the platform handles all management, making this concept transparent to the integration layer. The concept of *resource*, in the context of *Open Finance Brasil*, refers to each instance of a financial product the customer holds with a financial institution. For example, if a customer has 3 credit cards with a financial institution, this corresponds to 3 distinct resources.
-> Thus, one of the most common requests made by receiving institutions is to query all the financial products the end customer holds with the transmitting financial institution (provided the consent granted by the customer is broad enough). In this case, the platform already handles the necessary processing, activating the integration layer for each specific product to adequately handle such requests.
+{: .note}
+>In the *Open Finance Brasil* documentation, APIs related to **consent** (*consents*) and **resources** (*resources*) are defined. Regarding consent, the platform handles all management, making this concept transparent to the integration layer. The concept of *resource*, in the context of *Open Finance Brasil*, refers to each instance of a financial product the customer holds with a financial institution. For example, if a customer has 3 credit cards with a financial institution, this corresponds to 3 distinct resources.
+>
+>Thus, one of the most common requests made by receiving institutions is to query all the financial products the end customer holds with the transmitting financial institution (provided the consent granted by the customer is broad enough). In this case, the platform already handles the necessary processing, activating the integration layer for each specific product to adequately handle such requests.
 
 ## Customer Data
 

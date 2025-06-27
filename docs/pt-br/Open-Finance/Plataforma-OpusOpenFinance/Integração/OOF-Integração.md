@@ -8,7 +8,7 @@ lang: "pt-br"
 alternate_lang: "/Documentation/en/Open-Finance/Plataforma-OpusOpenFinance/Integração/OOF-Integração/"
 ---
 
-# Integração da Plataforma na instituição financeira
+# Integração da Plataforma à instituição financeira
 
 A **Plataforma Opus Open Finance** realiza a *interface* entre instituições financeiras e o ecossistema *Open Finance Brasil*, realizando todas as atividades inerentes a essa *interface* como a implementação das APIs regulatórias, a criação e gestão de consentimentos e a validação de cada chamada recebida de outras instituições financeiras. A plataforma funciona como uma camada que abstrai os aspectos específicos do ecossistema de Open Finance, e interage com os sistemas da instituição financeira para o atendimento aos requisitos das normas regulatórias.
 

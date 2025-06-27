@@ -32,14 +32,17 @@ Algumas das características principais da camada de integração a ser constru�
 
 - Não precisa (e nem deve) entrar no mérito da validade das requisições, uma vez que a plataforma já realizou todas as validações necessárias;
 - Deve ser capaz de atender a várias requisições simultaneamente (em  tese, não há limite para o número de requisições por segundo que deve ser atendido);
-- Deve oferecer tempo de resposta compatível com o nível de serviço exigido pela regulação. Os tempos de resposta máximos exigidos pelo regulatório para cada tipo de requisição podem ser encontrados [**aqui**][Tempos de Resposta];
+- Deve oferecer tempo de resposta compatível com o nível de serviço exigido pela regulação. Os tempos de resposta máximos exigidos pelo regulatório para cada tipo de requisição podem ser encontrados [**na documentação oficial do Open Finance Brasil**][Tempos de Resposta];
 
-> Deve-se considerar que a Plataforma Opus Open Finance reservará até 40% do tempo de resposta para aa validações e atendimento de cada requisição.
+{: .importante}
+Deve-se considerar que a Plataforma Opus Open Finance reservará até 40% do tempo de resposta para aa validações e atendimento de cada requisição.
 
 Apresentamos a seguir os diferentes tipos de dados envolvidos no atendimento a requisições dos vários produtos financeiros cobertos pelo escopo completo do *Open Finance Brasil*, devidamente atualizado para sua última versão. Cada seção abaixo, por sua vez, referencia uma página de documentação específica que detalha esses dados e apresenta a API da *camada de integração* que deve ser construída para integrar a **Plataforma Opus Open Finance** aos sistemas de retaguarda da instituição financeira.
 
-> Na documentação do *Open Finance Brasil* são definidas APIs referentes a **consentimento** (*consents*) e **recursos** (*resources*). No que tange ao consentimento, a plataforma realiza toda a gestão, tornando transparente esse conceito para a camada de  integração. Já o conceito de *recurso*, no universo do *Open Finance Brasil*, diz respeito a cada instância de produto financeiro que o cliente possui junto a uma instituição financeira. Por exemplo, se um cliente possui 3 cartões de crédito com uma instituição financeiro, isso equivale a 3 recursos distintos.
-> Dessa forma, uma das requisições mais comuns realizadas pelas instituições receptoras é a consulta de todos os produtos financeiros que o cliente final mantém com a instituição financeira transmissora (desde que o consentimento cedido pelo cliente seja abrangente o suficiente). Nesse caso, a plataforma já realiza o devido tratamento, ativando a camada de integração para cada produto específico de maneira a atender adequadamente esse tipo de requisição.
+{: .nota}
+>Na documentação do *Open Finance Brasil* são definidas APIs referentes a **consentimento** (*consents*) e **recursos** (*resources*). No que tange ao consentimento, a plataforma realiza toda a gestão, tornando transparente esse conceito para a camada de  integração. Já o conceito de *recurso*, no universo do *Open Finance Brasil*, diz respeito a cada instância de produto financeiro que o cliente possui junto a uma instituição financeira. Por exemplo, se um cliente possui 3 cartões de crédito com uma instituição financeiro, isso equivale a 3 recursos distintos.
+>
+>Dessa forma, uma das requisições mais comuns realizadas pelas instituições receptoras é a consulta de todos os produtos financeiros que o cliente final mantém com a instituição financeira transmissora (desde que o consentimento cedido pelo cliente seja abrangente o suficiente). Nesse caso, a plataforma já realiza o devido tratamento, ativando a camada de integração para cada produto específico de maneira a atender adequadamente esse tipo de requisição.
 
 ## Dados Cadastrais
 
