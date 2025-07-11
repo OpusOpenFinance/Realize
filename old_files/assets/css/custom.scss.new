@@ -1,24 +1,24 @@
 ---
 ---
-
 /* ========================================================================== */
 /* BASE GERAL: Fonte e Cor */
 /* ========================================================================== */
-
 body {
   font-family: 'Inter', sans-serif !important;
   color: #1e1360 !important;
   -webkit-font-smoothing: antialiased !important;
   background-color: white;
   margin: 0;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
   z-index: 0 !important;
   position: relative !important;
 }
-
 html {
   background-color: white;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
-
 /* Corrige empilhamento para evitar sobreposição da busca */
 .main,
 .main-content,
@@ -30,16 +30,15 @@ html {
   position: relative !important;
   z-index: 0 !important;
 }
-
 /* ========================================================================== */
 /* TIPOGRAFIA e alinhamento da Navegação */
 /* ========================================================================== */
-
 .nav-list-title,
 .nav-list-item,
 .nav-list-link {
-  padding-left: 20px !important;
-  margin-left: 0 !important;
+  padding-left: 0.25rem !important;
+  margin-left: 20px !important;
+  width: 400px !important;
 }
 
 .nav-list-title {
@@ -60,46 +59,35 @@ html {
   background-color: #e1ecf9 !important;
   color: #1a73e8 !important;
 }
-
-.nav-list {
-  padding-left: 0 !important;
-}
-
 /* ========================================================================== */
 /* BARRA LATERAL (Sidebar) */
 /* ========================================================================== */
-
-/* Faz o menu ocupar toda a largura da barra lateral */
-#site-nav.site-nav {
-  width: 100% !important;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-  padding-rigth: 1rem !important;
-  box-sizing: border-box;
-}
-
 .side-bar {
-  width: 480px !important;
+  width: 400px !important;
   background-color: white !important;
   border-right: none !important;
   box-shadow: none !important;
 }
-
 .side-bar .site-header {
   min-height: 132px !important;
-  width: 100% !important;
   height: auto !important;
   display: flex;
-  align-items: center;
-  justify-content: center !important;
-  padding: 0 !important;    /* Era 0 1rem */
+  width: 400px !important;
+  align-items: flex-start !important;
+  justify-content: space-between;
+  padding: 0 1rem !important;
   box-sizing: border-box;
   background-color: white !important;
   margin: 0;
+  margin-left: 20px !important;
+  padding-left: 0 !important;
+  left: 0 !important;
   line-height: 1 !important;
   border-bottom: none !important;
 }
-
+.site-nav {
+  width: 400px !important;
+}
 /* ========================================================================== */
 /* LOGO */
 /* ========================================================================== */
@@ -112,17 +100,15 @@ html {
   margin: 0 !important;
   padding: 0 !important;
 }
-
 .logo-link {
   display: flex;
-  justify-content: center !important;
+  justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 .logo-img {
   max-height: 80px;
   height: auto;
@@ -131,7 +117,6 @@ html {
   margin: 0;
   padding: 0;
 }
-
 /* ========================================================================== */
 /* CABEÇALHO DO CONTEÚDO PRINCIPAL */
 /* ========================================================================== */
@@ -148,18 +133,15 @@ html {
   margin: 0;
   justify-content: space-between;
 }
-
 .main-header > * {
   margin: 0 !important;
   padding: 0 !important;
 }
-
 .breadcrumb-nav {
   margin-top: 0 !important;
   padding: 0 !important;
   line-height: 1 !important;
 }
-
 /* ========================================================================== */
 /* CAIXA DE BUSCA E RESULTADOS */
 /* ========================================================================== */
@@ -172,13 +154,11 @@ html {
   position: relative;
   z-index: 10;
 }
-
 .search-input-wrap {
   display: flex;
   align-items: center;
   height: 2.25rem !important;
 }
-
 .search-input-wrap input[type="text"] {
   height: 100%;
   font-size: 14px;
@@ -187,20 +167,17 @@ html {
   box-sizing: border-box;
   padding: 0.25rem 2.5rem 0.25rem 0.75rem; /* aumente para 2.5rem à direita */
 }
-
 .search-label {
   position: absolute;
   margin-left: -2rem;
   right: 0.75rem;
   pointer-events: none;
 }
-
 .search-icon {
   width: 1rem;
   height: 1rem;
   vertical-align: middle;
 }
-
 #search-results {
   position: absolute;
   top: auto;
@@ -218,7 +195,6 @@ html {
   margin: 0;
   border: 1px solid #ccc;
 }
-
 /* Lista de resultados */
 .search-results-list {
   list-style: none;
@@ -227,7 +203,6 @@ html {
   background-color: white;
   border-radius: 6px;
 }
-
 .search-results-list-item {
   background-color: white;
   display: flex !important;
@@ -236,11 +211,9 @@ html {
   padding: 12px 16px !important;
   border-bottom: 1px solid #eee;
 }
-
 .search-results-list-item:last-child {
   border-bottom: none;
 }
-
 .search-result {
   display: block;
   width: 100% !important;
@@ -250,7 +223,6 @@ html {
   text-decoration: none;
   transition: background 0.2s ease;
 }
-
 .search-result-icon {
   flex-shrink: 0;
   width: 24px;
@@ -258,18 +230,15 @@ html {
   margin-top: 4px;
   color: #1a73e8;
 }
-
 .search-result-content {
   flex-grow: 1;
   min-width: 0;
 }
-
 .search-result:hover,
 .search-result.active {
   background-color: #e1ecf9 !important;
   color: #1a73e8 !important;
 }
-
 .search-result-title,
 .search-result-doc-title,
 .search-result-section {
@@ -279,18 +248,15 @@ html {
   color: #1e1360;
   font-family: 'Merriweather', serif;
 }
-
 .search-result-previews {
   font-size: 14px;
   color: #333;
   margin-top: 4px;
 }
-
 .search-result-highlight {
   font-weight: bold;
   color: #1a73e8;
 }
-
 /* Sobreposição escura ao fundo */
 .search-overlay {
   position: fixed !important;
@@ -304,7 +270,6 @@ html {
   pointer-events: auto;
   transition: opacity ease 400ms, width 0s, height 0s;
 }
-
 body:not(.search-active) .search-overlay {
   opacity: 0;
   width: 0;
@@ -312,31 +277,26 @@ body:not(.search-active) .search-overlay {
   pointer-events: none;
   transition: opacity ease 400ms, width 0s 400ms, height 0s 400ms;
 }
-
 #search-results,
 .search-overlay {
   display: none !important;
 }
-
 body.search-active #search-results,
 body.search-active .search-overlay {
   display: block !important;
 }
-
 /* ========================================================================== */
 /* CONTEÚDO PRINCIPAL E MARGENS */
 /* ========================================================================== */
 .main {
-  margin-left: 480px !important;
+  margin-left: 400px !important;
   padding-top: 1.25rem !important;
   z-index: 0 !important;
   position: relative !important;
 }
-
 .main-content-wrap {
   border-left: 1px solid #dde3ea !important;
 }
-
 /* ========================================================================== */
 /* CABEÇALHO PERSONALIZADO (language switcher) */
 /* ========================================================================== */
@@ -351,32 +311,27 @@ body.search-active .search-overlay {
   border-bottom: none !important;
   box-sizing: border-box;
 }
-
 .site-header-content {
   display: flex;
   align-items: center;
   height: 100%;
   padding-right: 16px;
 }
-
 .lang-switcher {
   display: flex;
   align-items: center;
   font-size: 14px;
   font-family: 'Inter', sans-serif;
 }
-
 .lang-switcher a {
   color: #1a73e8 !important;
   text-decoration: none;
   font-weight: bold;
   margin-right: 15px;
 }
-
 .lang-switcher a:hover {
   text-decoration: underline;
 }
-
 /* ========================================================================== */
 /* RODAPÉ */
 /* ========================================================================== */
@@ -391,18 +346,15 @@ footer.site-footer {
   position: relative !important;
   box-sizing: border-box;
 }
-
 .site-footer-content {
   display: block !important;
   width: 100%;
   text-align: left !important;
 }
-
 .footer-text-nowrap {
   display: inline-block;
   white-space: nowrap;
 }
-
 /* ========================================================================== */
 /* MEDIA QUERIES: Ajustes para telas maiores */
 /* ========================================================================== */

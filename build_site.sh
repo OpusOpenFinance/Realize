@@ -1,3 +1,17 @@
+#
+#   build_site.sh: constroi o site de documentação da Plataforma Opus Open Finance.
+#
+#       A construção é realizada em 3 etapas distintas:
+#            (1) página de redirecionamento, (2) páginas em português e (3) páginas em inglês.
+#
+#       Os diretórios com os documentos fonte devem estar em $HOME/site_doc_oof.
+#       As páginas HTML e os outros artefatos do site serão gerados em $HOME/_site/Documentation.
+#
+#       sintaxe: build_site.sh [pt-br] [en]
+#                Quando chamado sem argumentos realiza as 3 etapas de construção.
+#                Se chamado com argumento "pt-br", constrói apenas as páginas em português.
+#                Se chamado com argumento "en" constrói apenas as páginas em inglês.
+#
 #!/bin/bash
 set -e  # Interrompe o script se qualquer comando falhar
 

@@ -1,8 +1,17 @@
 Documentação Plataforma Opus Open Finance - Todo list
 =========================================   =========
 
+Estava fazendo vários testes:
+   nav-list-link.margin=left: 10px
+   .main.margin-left: 480px
+   .site-nav: 480px
+   .side-bar: 480px
+   .nav-list.padding-left: 0.1rem !important;
+
+Por ora, melhor voltar ao estado original (que está no Github) e depois alterar item a item.
+
+- Parece que ficou com margem esquerda de 20px + 20 px. Averiguar.
 - Ver deploy para novo ambiente. Ajustar GitHub Actions para fazer deploy automático.
-- Melhorar menu - Precisa conseguir alinhar mais à esquerda. Já aumentei área útil.
 - Verificar URL github.io (_config.yml?)
 
 ------------------------------------------------------------------------------------

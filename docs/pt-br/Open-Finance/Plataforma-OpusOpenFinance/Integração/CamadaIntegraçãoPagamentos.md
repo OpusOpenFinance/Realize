@@ -29,8 +29,6 @@ A imagem abaixo esquematiza a interação da **Plataforma Opus Open Finance** co
 
 ---
 
-## Camada de integração de Pagamento
-
 A _camada de integração de pagamento_ deve implementar uma _API REST_ que disponibiliza cinco diferentes operações, duas que serão chamadas durante a etapa de _criação do consentimento de pagamento_ e três que serão chamadas durante a etapa de _liquidação do pagamento_:
 
 _Etapa de criação do consentimento de pagamento:_
