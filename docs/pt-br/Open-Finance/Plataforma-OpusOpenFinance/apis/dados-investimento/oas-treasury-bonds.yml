@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: API Treasure Titles - Integration Layer - OPUS Open Finance Brasil
+  title: API Treasury Bonds - Integration Layer - OPUS Open Finance Brasil
   description: |
     API de informações de operações de Títulos do Tesouro Direto Open Finance Brasil – Fase 4. 
     API que retorna informações de operações de investimento do tipo Títulos do Tesouro Direto mantidas nas 
@@ -8,7 +8,7 @@ info:
     saldos em posição do cliente e movimentações financeiras. Não possui segregação entre pessoa natural e pessoa jurídica. 
     Devem ser considerados como escopo de exposição todos os títulos ofertados pelo Tesouro Direto. 
     A exposição se dará por cada operação de títulos do Tesouro Direto contratada pelo cliente.
-  version: 3.0.0-base1.0.1
+  version: 4.0.0-rc.1-base1.0.2
   license:
     name: Apache 2.0
     url: 'https://www.apache.org/licenses/LICENSE-2.0'
@@ -824,7 +824,7 @@ components:
     TreasureTitlesQuantity:
       description: Quantidade de títulos detidos na data da posição do cliente.
       maxLength: 24
-      pattern: '^\d{1,15}\.\d{2,8}$ '
+      pattern: '^\d{1,15}\.\d{2,8}$'
       format: double
       type: string
       example: '1000.015'
@@ -1097,6 +1097,7 @@ components:
     PaginationKey:
       description: |
         Identificador de rechamada, utilizado para evitar a contagem de chamadas ao endpoint durante a paginação.
+        Esse campo pode ser repassado de um fluxo anterior como um valor residual e, embora possa estar presente na requisição, não é necessário utilizá-lo — ele pode simplesmente ser ignorado.
       type: string
       maxLength: 2048
       pattern: '[\w\W\s]*'

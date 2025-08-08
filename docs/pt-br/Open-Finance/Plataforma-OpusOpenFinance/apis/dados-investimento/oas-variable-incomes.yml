@@ -43,7 +43,7 @@ info:
        | Renda Variável       | Fundos de índices             | ETF Renda Fixa       | ETF Renda Fixa                    |
        |----------------------|-------------------------------|----------------------|-----------------------------------|
        ```
-  version: 3.0.0-base1.2.1
+  version: 4.0.0-rc.1-base1.2.1
   license:
     name: Apache 2.0
     url: 'https://www.apache.org/licenses/LICENSE-2.0'
@@ -1258,6 +1258,7 @@ components:
     PaginationKey:
       description: |
         Identificador de rechamada, utilizado para evitar a contagem de chamadas ao endpoint durante a paginação.
+        Esse campo pode ser repassado de um fluxo anterior como um valor residual e, embora possa estar presente na requisição, não é necessário utilizá-lo — ele pode simplesmente ser ignorado.
       type: string
       maxLength: 2048
       pattern: '[\w\W\s]*'

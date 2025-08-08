@@ -18,7 +18,7 @@ info:
     Para o identificador do investimento (investmentId) deve ser adotado o seguinte comportamento:
 
     - Após 12 meses sem movimentações e com quantidade de ativos zerada, o resourceId correspondente ao investmentId em questão deve passar ao status UNAVAILABLE (considerando consentimento válido);
-  version: 3.0.0-base1.0.2
+  version: 4.0.0-rc.1-base1.0.2
   license:
     name: Apache 2.0
     url: 'https://www.apache.org/licenses/LICENSE-2.0'
@@ -1272,6 +1272,7 @@ components:
     PaginationKey:
       description: |
         Identificador de rechamada, utilizado para evitar a contagem de chamadas ao endpoint durante a paginação.
+        Esse campo pode ser repassado de um fluxo anterior como um valor residual e, embora possa estar presente na requisição, não é necessário utilizá-lo — ele pode simplesmente ser ignorado.
       type: string
       maxLength: 2048
       pattern: '[\w\W\s]*'

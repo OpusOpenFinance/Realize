@@ -28,7 +28,7 @@ info:
       | OUTROS            | DO                      | Fatura fechada        |
       |-------------------|-------------------------|-----------------------|
       ```
-  version: 3.0.0-base2.3.1
+  version: 4.0.0-rc.1-base2.3.1
   license:
     name: Apache 2.0
     url: 'https://www.apache.org/licenses/LICENSE-2.0'
@@ -1482,6 +1482,7 @@ components:
     PaginationKey:
       description: |
         Identificador de rechamada, utilizado para evitar a contagem de chamadas ao endpoint durante a paginação.
+        Esse campo pode ser repassado de um fluxo anterior como um valor residual e, embora possa estar presente na requisição, não é necessário utilizá-lo — ele pode simplesmente ser ignorado.
       type: string
       maxLength: 2048
       pattern: '[\w\W\s]*'
@@ -2014,8 +2015,6 @@ components:
           $ref: '#/components/schemas/RequestMeta'
         creditCardAccountId:
           $ref: '#/components/schemas/LegacyId'
-        billId:
-          $ref: '#/components/schemas/LegacyId'
         page:
           $ref: '#/components/schemas/Page'
         pageSize:
@@ -2043,8 +2042,6 @@ components:
         requestMeta:
           $ref: '#/components/schemas/RequestMeta'
         creditCardAccountId:
-          $ref: '#/components/schemas/LegacyId'
-        billId:
           $ref: '#/components/schemas/LegacyId'
         page:
           $ref: '#/components/schemas/Page'

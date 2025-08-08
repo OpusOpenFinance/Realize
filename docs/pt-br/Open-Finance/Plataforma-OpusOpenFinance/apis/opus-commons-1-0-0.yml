@@ -4,7 +4,7 @@ info:
   description: |
     API de rotas que são gerais para o funcionamento dos conectores de todos os produtos.
     API com a rota que verifica se dado cliente possui uma conta na instituição financeira necessária para as rotas.
-  version: 3.0.0
+  version: 4.0.0-rc1
   license:
     name: Apache 2.0
     url: 'https://www.apache.org/licenses/LICENSE-2.0'

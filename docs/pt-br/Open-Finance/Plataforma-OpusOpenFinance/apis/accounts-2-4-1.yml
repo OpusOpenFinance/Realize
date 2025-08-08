@@ -84,7 +84,7 @@ info:
         - Existem situação de exceção nas quais um lançamento com identificador estável em D0 pode ser eliminado em D+1. ​
             
             - Por exemplo, para situações de cobrança de tarifa avulsa nas quais existe acordo negocial ou insuficiência de saldo.
-  version: 3.0.0-base2.4.1
+  version: 4.0.0-rc.1-base2.4.2
   license:
     name: Apache 2.0
     url: 'https://www.apache.org/licenses/LICENSE-2.0'
@@ -682,8 +682,13 @@ components:
           type: string
           maxLength: 200
           pattern: '[\w\W\s]*'
-          description: "Literal usada na instituição financeira para identificar a transação. A informação apresentada precisa ser a mesma utilizada nos canais eletrônicos da instituição (extrato). Em casos onde a descrição da transação é apresentada com múltiplas linhas, todas as linhas devem ser enviadas (concatenadas) neste atributo, não sendo obrigatória a concatenação das informações já enviadas em outros atributos (ex: valor, data) do mesmo endpoint."
-          example: TRANSFCWAR5TXHCX5I9IDBHML8082N8NEO30M6LNNG7ANAYIJYRM00ZBZPU8
+          description: |
+            Literal usada na instituição financeira para identificar a transação. 
+            A informação apresentada precisa ser a mesma utilizada nos canais digitais da instituição (assim como o histórico de transações apresentado na tela do aplicativo ou do navegador). 
+            Caso a instituição possua mais de um canal digital, a informação compartilhada deve ser a do canal que apresenta a descrição mais completa possível da transação. 
+            Em casos onde a descrição da transação é apresentada com múltiplas linhas, todas as linhas devem ser enviadas (concatenadas) neste atributo, não sendo obrigatória a concatenação das informações já enviadas em outros atributos (ex: valor, data) do mesmo endpoint. 
+            Adicionalmente, o Banco Central pode determinar o formato de compartilhamento a ser adotado por uma instituição participante específica.
+          example: Transferencia Enviada Lima Santos
         type:
           $ref: '#/components/schemas/EnumTransactionTypes'
         transactionAmount:
@@ -1068,6 +1073,7 @@ components:
     PaginationKey:
       description: |
         Identificador de rechamada, utilizado para evitar a contagem de chamadas ao endpoint durante a paginação.
+        Esse campo pode ser repassado de um fluxo anterior como um valor residual e, embora possa estar presente na requisição, não é necessário utilizá-lo — ele pode simplesmente ser ignorado.
       type: string
       maxLength: 2048
       pattern: '[\w\W\s]*'
