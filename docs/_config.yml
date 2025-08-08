@@ -2,7 +2,7 @@
 title: "Opus Open Finance"
 description: "Documentação que descreve a Plataforma Opus Open Finance, incluindo integração e implantação"
 url: "https://opusopenfinance.github.io"
-baseurl: "/Documentation"
+baseurl: "/Realize"
 
 # Utiliza tema local
 remote_theme: null
